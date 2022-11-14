@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Boomark Management System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="container py-4 pl-4 border-bottom border-dark">
+        <h2 class="">Bookmark Management System</h2>
+      </div>
+    </header>
+    <section>
+      <div class="container py-3 pl-4 border-bottom border-dark">
+      
+        <div id="bookmarkSite" class="text-center mb-4">
+          <h3 class="mb-5 text-capitalize">Bookmark your sites here</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Site Name</label>
+              <input
+                type="text"
+                class="form-control mb-4"
+                id="siteName"
+                placeholder="Bookmark Name"
+              />
+              <label for="exampleInputEmail1">Site URL</label>
+              <input
+                type="text"
+                class="form-control mb-4"
+                id="siteUrl"
+                placeholder="Website URL"
+              />
+            </div>
+            <button type="button" id="addBtn" onclick="addWebsite()" class="btn btn-primary">Submit</button>
+              
+          </form>
+        </div>
+     
+
+      
+        <div id="displaySite">
+          <div class="websiteItem">
+            <h3 class="d-inline-block">Task</h3>
+            <a id="visitBtn" class="btn btn-primary d-inline-block mx-2" href=https://facebook.com/ target="_blank">Visit</a>
+            <button  id="deleteBtn" onclick="deleteWebsite(this)" class="btn btn-danger text-white d-inline-block mx-2">Delete</button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+   
+    <footer>
+      <div class="container py-3 pl-4">
+        <p>&copy; 2021 Boomark Assignment</p>
+      </div>
+    </footer>
+    
+    <input type="checkbox" id="checkInp"/>
+    <div id="imageDiv">
+    </div>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>>
+    <script src="js/app.js">
+      checkInp.on = function () 
+      {
+        var imageDiv = document.getElementById("imageDiv");
+        var myImg = "<img src=\" Path Here \" />";
+        imageDiv.innerHTML += myImg;
+      };
+    </script>
+  </body>
+</html>
